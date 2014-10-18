@@ -1,6 +1,6 @@
 require 'spec_helper'
 describe "StaticPages" do  
-      let(:base_title){"Sample App Tutorial "}
+      let(:base_title){"Sample App Tutorials"}
   	 	describe "Home Page" do
   	 		it "should have the content 'Sample App'" do
   	 			visit '/static_pages/home'
@@ -9,7 +9,7 @@ describe "StaticPages" do
         it "should have the title 'Home'" do
           visit '/static_pages/home'
           page.should have_selector('title',
-            :text =>"#{base_title}|Home")
+            :text =>"#{base_title}")
         end
   	 	end
   	 	describe "Help Page" do
@@ -20,7 +20,7 @@ describe "StaticPages" do
         it "should have the title 'Help'" do
           visit '/static_pages/help'
           page.should have_selector('title',
-          :text =>"#{base_title}|Help")
+          :text =>"#{base_title} | Help")
         end
       end
       describe "About Us" do
@@ -31,7 +31,7 @@ describe "StaticPages" do
         it "should have the title 'About'" do
           visit '/static_pages/about'
           page.should have_selector('title',
-          :text =>"#{base_title}|About")
+          :text =>"#{base_title} | About")
         end
       end
       describe "Contact Us" do
@@ -42,7 +42,7 @@ describe "StaticPages" do
         it "should have the title 'Contact'" do
           visit '/static_pages/contact'
           page.should have_selector('title',
-            :text =>"#{base_title}|Contact")
+            :text =>"#{base_title} | Contact")
         end
       end
       # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
