@@ -46,6 +46,15 @@ Spork.each_run do
 
 end
 
+def full_title(page_title)
+base_title = "Sample App Tutorials"
+if page_title.empty?
+base_title
+else
+"#{base_title} | #{page_title}"
+end
+end
+
 # --- Instructions ---
 # Sort the contents of this file into a Spork.prefork and a Spork.each_run
 # block.
