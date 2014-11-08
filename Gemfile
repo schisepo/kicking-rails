@@ -8,6 +8,7 @@
 		gem 'mysql2'	
 		gem 'rspec-rails','2.9.0'
 		gem 'guard-rspec','0.5.5'
+		gem 'annotate', ' ~> 2.4.1.beta'
 	end
 	# Use SCSS for stylesheets
 	gem 'sass-rails', '~> 4.0.3'
@@ -19,7 +20,12 @@
 	# gem 'therubyracer',  platforms: :ruby
 	#gem 'rails', '3.2.3'
 	gem 'bootstrap-sass', '3.2.0.0'
+	# Use Becrypt
+	gem 'bcrypt-ruby', '3.1.0'
 	# Use jquery as the JavaScript library
+	gem 'hilink'
+	gem 'serialport'
+	#gem 'time'
 	gem 'jquery-rails'
 	# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 	gem 'turbolinks'
