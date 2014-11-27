@@ -48,9 +48,9 @@
 		#gem 'rb-inotify', '~> 0.9'
 	end
 
-	#group :production do
-	#	gem 'pg', '0.12.2'
-	#end
+	group :production do
+	gem 'pg', '0.12.2'
+	end
 	# Use ActiveModel has_secure_password
 	# gem 'bcrypt', '~> 3.1.7'
 
