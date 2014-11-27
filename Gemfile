@@ -24,6 +24,7 @@
 	gem 'bcrypt-ruby', '3.1.0'
 	# Use jquery as the JavaScript library
 	gem 'hilink'
+	gem 'byebug'
 	gem 'serialport'
 	#gem 'time'
 	gem 'jquery-rails'
