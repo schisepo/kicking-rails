@@ -2,10 +2,12 @@ class UsersController < ApplicationController
   def new
   	@user = User.new
   end
+
   def show
-	@user = User.find(params[:id])
-	#debugger
+	 @user = User.find(params[:id])
+	 #debugger
   end
+
   def create
     @user = User.new(user_params)    # Not the final implementation!
     if @user.save
